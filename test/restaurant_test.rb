@@ -30,17 +30,17 @@ class RestaurantTest < Minitest::Test
     restaurant = Restaurant.new('10:00', 'Fuel Cafe')
 
     assert_equal [], restaurant.dishes
-    require 'pry'
   end
 
   #Iteration 2 Tests:
   def test_it_has_closing_time
-    skip
+    # skip
     restaurant1 = Restaurant.new('10:00', 'Fuel Cafe')
     restaurant2 = Restaurant.new('16:00', 'Il Poggio')
 
     assert_equal '18:00', restaurant1.closing_time(8)
     assert_equal '23:00', restaurant2.closing_time(7)
+    requiire 'pry'
   end
 
   def test_it_can_add_dishes
