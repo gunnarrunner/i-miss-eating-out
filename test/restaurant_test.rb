@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/restaurant'
+require 'pry'
 
 class RestaurantTest < Minitest::Test
   # Iteration 1 Tests:
@@ -11,24 +12,25 @@ class RestaurantTest < Minitest::Test
   end
 
   def test_it_has_opening_time
-    skip
+    # skip
     restaurant = Restaurant.new('10:00', 'Fuel Cafe')
 
     assert_equal '10:00', restaurant.opening_time
   end
 
   def test_it_has_name
-    skip
+    # skip
     restaurant = Restaurant.new('10:00', 'Fuel Cafe')
 
     assert_equal 'Fuel Cafe', restaurant.name
   end
 
   def test_it_has_dishes
-    skip
+    # skip
     restaurant = Restaurant.new('10:00', 'Fuel Cafe')
 
     assert_equal [], restaurant.dishes
+    require 'pry'
   end
 
   #Iteration 2 Tests:
